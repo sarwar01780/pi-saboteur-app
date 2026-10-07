@@ -145,7 +145,1683 @@ textarea{width:100%;min-height:80px;font:inherit;font-size:.9rem;background:var(
 <body>
 <main id="app" aria-live="polite"></main>
 <script>
-const TESTS = {"children":{"title":"Children, Parenting, and Development","short":"Children","who":"Completed by a parent/guardian or teacher who knows the child well (child age 6–17). Adolescents aged 13–17 may complete a self-report version by replacing “This child” with “I” in every statement.","instr":"Think about how this child has usually behaved over the past three months, not on one unusual day. There are no right or wrong answers. Mark one box per statement.","items":[{"n":1,"text":"This child avoids disagreements, even when something is clearly bothering them.","s":"Avoider"},{"n":2,"text":"This child gets very upset if things are not done “the right way.”","s":"Stickler"},{"n":3,"text":"This child has trouble staying with one activity and quickly wants something new.","s":"Restless"},{"n":4,"text":"This child worries a lot about things that might go wrong.","s":"Hyper-Vigilant"},{"n":5,"text":"This child is very hard on themselves after a mistake (for example, saying “I’m so stupid”).","s":"Judge","sub":"self"},{"n":6,"text":"This child insists on being in charge during games or group activities.","s":"Controller"},{"n":7,"text":"This child prefers facts and logic and can be dismissive of other people’s feelings.","s":"Hyper-Rational"},{"n":8,"text":"This child often feels that people are picking on them or treating them unfairly.","s":"Victim"},{"n":9,"text":"This child often points out what other children or adults are doing wrong.","s":"Judge","sub":"others"},{"n":10,"text":"This child seems to feel good about themselves mainly when they win or get top marks.","s":"Hyper-Achiever"},{"n":11,"text":"This child tries very hard to make adults or friends happy, even at their own expense.","s":"Pleaser"},{"n":12,"text":"This child puts off homework or chores that feel hard or boring.","s":"Avoider"},{"n":13,"text":"This child redoes work many times because it is not neat or perfect enough.","s":"Stickler"},{"n":14,"text":"This child gets bored easily, even with activities they chose themselves.","s":"Restless"},{"n":15,"text":"This child needs a lot of reassurance before trying something new.","s":"Hyper-Vigilant"},{"n":16,"text":"This child tends to see a disappointing event as totally ruined (for example, “This whole day is the worst”).","s":"Judge","sub":"circ"},{"n":17,"text":"This child gets very upset when plans change or others do things differently.","s":"Controller"},{"n":18,"text":"This child seems impatient or bored when others talk about their emotions.","s":"Hyper-Rational"},{"n":19,"text":"This child withdraws, sulks, or pouts when corrected.","s":"Victim"},{"n":20,"text":"This child gets upset or gives up when their work is not perfect or as good as others’ work.","s":"Judge","sub":"self"},{"n":21,"text":"This child is very focused on grades, trophies, or praise.","s":"Hyper-Achiever"},{"n":22,"text":"This child finds it very hard to say no.","s":"Pleaser"},{"n":23,"text":"This child says “everything is fine” when it seems something is wrong.","s":"Avoider"},{"n":24,"text":"This child is bothered when others do not follow rules exactly.","s":"Stickler"},{"n":25,"text":"This child rarely seems satisfied or settled with what they are doing.","s":"Restless"},{"n":26,"text":"This child is easily alarmed by small risks or changes in routine.","s":"Hyper-Vigilant"},{"n":27,"text":"This child quickly decides that other kids are “annoying,” “dumb,” or “mean.”","s":"Judge","sub":"others"},{"n":28,"text":"This child pushes other children to do things their way.","s":"Controller"},{"n":29,"text":"This child often corrects others or argues to prove they are right.","s":"Hyper-Rational"},{"n":30,"text":"This child stays upset for a long time after a disappointment.","s":"Victim"},{"n":31,"text":"This child complains that things are unfair more often than their peers do.","s":"Judge","sub":"circ"},{"n":32,"text":"This child loses interest in an activity if they cannot be the best at it.","s":"Hyper-Achiever"},{"n":33,"text":"This child seems to need frequent approval or praise from others.","s":"Pleaser"},{"n":34,"text":"This child goes along with others rather than saying what they want.","s":"Avoider"},{"n":35,"text":"This child has trouble relaxing when things are messy or out of order.","s":"Stickler"},{"n":36,"text":"This child starts many projects or games but seldom finishes them.","s":"Restless"},{"n":37,"text":"This child seems more anxious or on edge than other children their age.","s":"Hyper-Vigilant"},{"n":38,"text":"This child rarely feels proud of their own effort, even when they do well.","s":"Judge","sub":"self"},{"n":39,"text":"This child finds it hard to take turns or let others lead.","s":"Controller"},{"n":40,"text":"This child explains things logically but finds it hard to express their own feelings.","s":"Hyper-Rational"},{"n":41,"text":"This child tends to seek sympathy rather than try to solve the problem.","s":"Victim"},{"n":42,"text":"This child finds it hard to say something kind about a classmate or sibling.","s":"Judge","sub":"others"},{"n":43,"text":"This child often compares their results with other children’s results.","s":"Hyper-Achiever"},{"n":44,"text":"This child gives up their own turn, toy, or choice to keep others happy.","s":"Pleaser"},{"n":45,"text":"This child focuses on what is wrong in a situation rather than what could be fun or interesting.","s":"Judge","sub":"circ"}],"partB":[{"n":46,"q":"Who is completing this questionnaire?","t":"Select one","o":["Parent or guardian","Teacher","Other caregiver (grandparent, coach, etc.)","The young person (self-report, age 13–17)"],"scale":null},{"n":47,"q":"What is the child’s age group?","t":"Select one","o":["6–8 years","9–12 years","13–15 years","16–17 years"],"scale":null},{"n":48,"q":"In which setting have you mostly observed the child?","t":"Select one","o":["Home","School or classroom","Both home and school","Activities (sports, clubs, faith or community groups)"],"scale":null},{"n":49,"q":"How long have you known or observed this child?","t":"Select one","o":["Less than 6 months","6–12 months","1–3 years","More than 3 years"],"scale":null},{"n":50,"q":"Which qualities would you most like to help this child strengthen?","t":"Select up to two","o":["Curiosity","Empathy","Creativity","Resilience","Problem-solving","Confidence"],"scale":null},{"n":51,"q":"Has the child experienced any major changes in the past 12 months?","t":"Select all that apply","o":["Moved home or school","New sibling or change in household","Family separation, illness, or loss","Other significant change","No major changes"],"scale":null},{"n":52,"q":"What kind of support would be most helpful to you?","t":"Select all that apply","o":["Ideas for home","Ideas for the classroom","Talking with a school counselor or pediatric professional","Age-appropriate resources for the child","Not sure"],"scale":null}]},"work":{"title":"Workplace and Professional Development","short":"Workplace","who":"Self-report by the individual employee, manager, or student intern. Completed voluntarily; results belong to the respondent.","instr":"Answer based on how you usually think and act at work over the past three months. Be honest; this is for your own development and is not a performance evaluation. Mark one box per statement.","items":[{"n":1,"text":"I avoid raising disagreements in meetings, even when I think a decision is wrong.","s":"Avoider"},{"n":2,"text":"I have trouble submitting work until it is perfect, even when “good enough” would do.","s":"Stickler"},{"n":3,"text":"I get bored quickly with routine work and look for something new.","s":"Restless"},{"n":4,"text":"I constantly worry about what might go wrong on projects or in my job.","s":"Hyper-Vigilant"},{"n":5,"text":"I am harshly critical of myself when my work falls short.","s":"Judge","sub":"self"},{"n":6,"text":"I find it hard to delegate because others may not do the work the way I would.","s":"Controller"},{"n":7,"text":"I focus on data and logic and tend to overlook how people feel about decisions.","s":"Hyper-Rational"},{"n":8,"text":"When I receive criticism at work, I tend to withdraw or feel hurt for a long time.","s":"Victim"},{"n":9,"text":"I notice colleagues’ shortcomings more readily than their contributions.","s":"Judge","sub":"others"},{"n":10,"text":"My sense of self-worth depends mostly on my work performance and results.","s":"Hyper-Achiever"},{"n":11,"text":"I say yes to extra work even when I am already overloaded.","s":"Pleaser"},{"n":12,"text":"I put off difficult conversations with colleagues or my manager.","s":"Avoider"},{"n":13,"text":"I am frustrated when others do not follow procedures or standards precisely.","s":"Stickler"},{"n":14,"text":"I start many initiatives but struggle to see them through.","s":"Restless"},{"n":15,"text":"I find it hard to trust that colleagues will deliver without close checking.","s":"Hyper-Vigilant"},{"n":16,"text":"When a project goes wrong, I tend to see it as a disaster rather than a learning opportunity.","s":"Judge","sub":"circ"},{"n":17,"text":"I get anxious when I am not in control of how a project is run.","s":"Controller"},{"n":18,"text":"I get impatient with colleagues who bring emotion into work discussions.","s":"Hyper-Rational"},{"n":19,"text":"I often feel my contributions are overlooked or unappreciated.","s":"Victim"},{"n":20,"text":"I replay my mistakes at work long after they have been fixed.","s":"Judge","sub":"self"},{"n":21,"text":"I adjust how I present myself to impress people who matter for my career.","s":"Hyper-Achiever"},{"n":22,"text":"I find it hard to give honest negative feedback because I don’t want to upset people.","s":"Pleaser"},{"n":23,"text":"I delay important tasks that feel unpleasant or uncomfortable.","s":"Avoider"},{"n":24,"text":"Colleagues have told me I focus too much on details.","s":"Stickler"},{"n":25,"text":"I rarely feel settled in my current role and often think about the next move.","s":"Restless"},{"n":26,"text":"I feel more anxious about job security or making mistakes than most people I work with.","s":"Hyper-Vigilant"},{"n":27,"text":"I often think my coworkers or managers are less competent than they should be.","s":"Judge","sub":"others"},{"n":28,"text":"I tend to take over discussions or decisions in team settings.","s":"Controller"},{"n":29,"text":"Others have described me as cold, distant, or intellectually arrogant.","s":"Hyper-Rational"},{"n":30,"text":"I feel my difficulties at work are mostly caused by other people or bad luck.","s":"Victim"},{"n":31,"text":"I often feel frustrated that my organization or job conditions are not what they should be.","s":"Judge","sub":"circ"},{"n":32,"text":"I find it hard to slow down or rest, even after reaching a goal.","s":"Hyper-Achiever"},{"n":33,"text":"Being liked by my colleagues and manager matters a great deal to me.","s":"Pleaser"},{"n":34,"text":"I let workplace conflicts go unaddressed until they grow into bigger problems.","s":"Avoider"},{"n":35,"text":"I find it hard to adapt when a process is changed or done less rigorously.","s":"Stickler"},{"n":36,"text":"I keep myself constantly busy to avoid feeling stuck.","s":"Restless"},{"n":37,"text":"I spend a lot of energy anticipating risks that rarely happen.","s":"Hyper-Vigilant"},{"n":38,"text":"I rarely feel satisfied with my own performance, even after positive feedback.","s":"Judge","sub":"self"},{"n":39,"text":"Colleagues have told me I can be too forceful or controlling.","s":"Controller"},{"n":40,"text":"I prefer to solve problems alone rather than deal with team dynamics.","s":"Hyper-Rational"},{"n":41,"text":"When things go badly at work, I stay discouraged for a long time.","s":"Victim"},{"n":42,"text":"I give criticism to colleagues far more often than recognition.","s":"Judge","sub":"others"},{"n":43,"text":"Recognition, titles, and status at work are very important to me.","s":"Hyper-Achiever"},{"n":44,"text":"I help others so much that I fall behind on my own priorities and feel resentful.","s":"Pleaser"},{"n":45,"text":"I dwell on what is wrong with my workplace more than on what I can do about it.","s":"Judge","sub":"circ"}],"partB":[{"n":46,"q":"Consent: I am completing this assessment voluntarily and understand that my results belong to me and will not be shared without my permission.","t":"Select one","o":["Yes, I agree and wish to continue","No (please stop here; no data will be kept)"],"scale":null},{"n":47,"q":"Which best describes your current role?","t":"Select one","o":["Individual contributor","Team lead or supervisor","Manager","Senior leader or executive","Student, intern, or trainee"],"scale":null},{"n":48,"q":"How many years of work experience do you have?","t":"Select one","o":["Less than 2 years","2–5 years","6–10 years","More than 10 years"],"scale":null},{"n":49,"q":"What is your main work setting?","t":"Select one","o":["On-site","Hybrid","Remote"],"scale":null},{"n":50,"q":"Which areas would you most like to improve?","t":"Select up to two","o":["Communication","Teamwork","Leadership","Decision-making","Creativity","Handling conflict","Job performance and workload"],"scale":null},{"n":51,"q":"Where do you experience the most tension or frustration at work?","t":"Select all that apply","o":["Deadlines and workload","Meetings and decision-making","Giving or receiving feedback","Conflict with colleagues","Unclear expectations","Relationship with my manager","Not sure, but it is a recurring pattern"],"scale":null},{"n":52,"q":"How would you like your results to be used?","t":"Select one","o":["Keep private (only I see them)","Share with a coach or mentor I choose","Share with my manager for a development conversation","Include anonymously in a team summary (only if 5 or more people take part)"],"scale":null}]},"couple":{"title":"Marriage and Life Partnerships","short":"Partnership","who":"Each partner completes the test separately and privately, without discussing answers, before or during a committed relationship. Individual results can then be combined into a Couple Interaction Map if both partners consent.","instr":"Answer based on how you usually think, feel, and act in your relationship (or, if not yet living together, how you usually act in close relationships). Answer for yourself only. Mark one box per statement.","items":[{"n":1,"text":"I avoid bringing up issues with my partner to keep the peace.","s":"Avoider"},{"n":2,"text":"I have firm standards for how household tasks should be done.","s":"Stickler"},{"n":3,"text":"I get bored with routines at home and look for new excitement.","s":"Restless"},{"n":4,"text":"I worry a lot about our finances, health, or future as a couple.","s":"Hyper-Vigilant"},{"n":5,"text":"I blame myself harshly when something goes wrong in our relationship.","s":"Judge","sub":"self"},{"n":6,"text":"I prefer to make the major decisions in our household.","s":"Controller"},{"n":7,"text":"I respond to my partner’s emotions with logic or solutions rather than empathy.","s":"Hyper-Rational"},{"n":8,"text":"I often feel my partner does not understand or appreciate me.","s":"Victim"},{"n":9,"text":"I notice my partner’s faults and habits more than their good qualities.","s":"Judge","sub":"others"},{"n":10,"text":"My mood at home depends a lot on how my work or career is going.","s":"Hyper-Achiever"},{"n":11,"text":"I put my partner’s needs ahead of my own even when it hurts me.","s":"Pleaser"},{"n":12,"text":"I change the subject or go quiet when a disagreement starts.","s":"Avoider"},{"n":13,"text":"I get irritated when my partner is messy, late, or disorganized.","s":"Stickler"},{"n":14,"text":"I want to change plans, places, or projects more often than my partner does.","s":"Restless"},{"n":15,"text":"I often worry that my partner may lose interest in me or leave.","s":"Hyper-Vigilant"},{"n":16,"text":"When our plans fall apart, I see it as a sign that things are going badly overall.","s":"Judge","sub":"circ"},{"n":17,"text":"I feel uneasy when my partner handles things (money, plans, chores) their own way.","s":"Controller"},{"n":18,"text":"I find emotional conversations with my partner tiring or unnecessary.","s":"Hyper-Rational"},{"n":19,"text":"When my partner criticizes me, I withdraw, sulk, or give the silent treatment.","s":"Victim"},{"n":20,"text":"I often feel I am not a good enough partner.","s":"Judge","sub":"self"},{"n":21,"text":"It is important to me that we look successful to family and friends.","s":"Hyper-Achiever"},{"n":22,"text":"I agree to things I don’t really want to avoid disappointing my partner or their family.","s":"Pleaser"},{"n":23,"text":"I postpone conversations about money, family, or the future because they feel uncomfortable.","s":"Avoider"},{"n":24,"text":"I redo tasks my partner has already done because they were not done right.","s":"Stickler"},{"n":25,"text":"I find it hard to simply enjoy quiet time together.","s":"Restless"},{"n":26,"text":"I check details (bills, plans, whereabouts) more than my partner thinks is necessary.","s":"Hyper-Vigilant"},{"n":27,"text":"I criticize my partner more often than I appreciate them.","s":"Judge","sub":"others"},{"n":28,"text":"I push for my way in disagreements until my partner gives in.","s":"Controller"},{"n":29,"text":"My partner has said I seem distant or hard to reach emotionally.","s":"Hyper-Rational"},{"n":30,"text":"I feel I sacrifice more in this relationship than my partner does.","s":"Victim"},{"n":31,"text":"I often feel frustrated about our living situation, finances, or family circumstances.","s":"Judge","sub":"circ"},{"n":32,"text":"I give more energy to my goals and achievements than to time with my partner.","s":"Hyper-Achiever"},{"n":33,"text":"I need frequent reassurance that my partner is happy with me.","s":"Pleaser"},{"n":34,"text":"Small unresolved issues between us tend to build up over time.","s":"Avoider"},{"n":35,"text":"I find it hard to let small imperfections in our home or routines go.","s":"Stickler"},{"n":36,"text":"I keep myself so busy that we have little unhurried time together.","s":"Restless"},{"n":37,"text":"I find it hard to relax, even when things between us are going well.","s":"Hyper-Vigilant"},{"n":38,"text":"I replay things I said to my partner and criticize myself for them.","s":"Judge","sub":"self"},{"n":39,"text":"My partner has told me I can be controlling.","s":"Controller"},{"n":40,"text":"I believe most relationship problems would disappear if we were both more logical.","s":"Hyper-Rational"},{"n":41,"text":"After an argument, I stay hurt for a long time.","s":"Victim"},{"n":42,"text":"I compare my partner unfavorably with other people’s partners.","s":"Judge","sub":"others"},{"n":43,"text":"I feel worthy as a partner mainly when I am providing or succeeding.","s":"Hyper-Achiever"},{"n":44,"text":"I give a lot in the relationship and sometimes quietly resent it.","s":"Pleaser"},{"n":45,"text":"I focus on what is missing in our relationship more than on what is working.","s":"Judge","sub":"circ"}],"partB":[{"n":46,"q":"What stage is your relationship in?","t":"Select one","o":["Dating","Engaged or planning to marry","Married or life partners, less than 3 years","Married or life partners, 3 years or more"],"scale":null},{"n":47,"q":"Do you currently live together?","t":"Select one","o":["Yes","No","Planning to soon"],"scale":null},{"n":48,"q":"Is your partner also completing this assessment?","t":"Select one","o":["Yes","No","Not yet, but I plan to ask"],"scale":null},{"n":49,"q":"In which areas do you experience the most tension?","t":"Select all that apply","o":["Finances","Household tasks and routines","Extended family or in-laws","Parenting or plans for children","Emotional communication","Time together","Major decisions","None at present"],"scale":null},{"n":50,"q":"How do you usually handle a disagreement with your partner?","t":"Select one","o":["Talk it through right away","Take time to cool off, then talk","Avoid it and hope it passes","One of us usually decides"],"scale":null},{"n":51,"q":"What do you most hope to gain from this assessment?","t":"Select all that apply","o":["Understand my own triggers","Understand my partner better","Learn conflict-management strategies","Prepare for marriage or cohabitation"],"scale":null},{"n":52,"q":"Do you consent to sharing your results with your partner?","t":"Select one","o":["Yes, share my full results","Share only my top patterns","No, keep my results private"],"scale":null}]},"wellbeing":{"title":"Individual Well-being and Lifelong Flourishing","short":"Well-being","who":"Self-report by any adult. Designed to be repeated (for example, before and after six weeks of mental-fitness practice) to track change.","instr":"Part A: answer based on how you usually think and feel over the past three months. Part B (questions 46–50): rate how things have been in the past two weeks on a 0–10 scale. Mark one box per statement.","items":[{"n":1,"text":"I avoid unpleasant feelings by keeping myself distracted.","s":"Avoider"},{"n":2,"text":"I feel uneasy when things around me are not orderly.","s":"Stickler"},{"n":3,"text":"I rarely feel at peace with what I am doing in the moment.","s":"Restless"},{"n":4,"text":"My mind often scans for what could go wrong.","s":"Hyper-Vigilant"},{"n":5,"text":"I criticize myself harshly when I fall short of my own expectations.","s":"Judge","sub":"self"},{"n":6,"text":"I feel anxious when I cannot control how things turn out.","s":"Controller"},{"n":7,"text":"I analyze my feelings rather than actually feeling them.","s":"Hyper-Rational"},{"n":8,"text":"I feel that life is harder for me than for most people.","s":"Victim"},{"n":9,"text":"I quickly notice faults in the people around me.","s":"Judge","sub":"others"},{"n":10,"text":"I feel worthwhile mainly when I am accomplishing something.","s":"Hyper-Achiever"},{"n":11,"text":"I often neglect my own needs to take care of others.","s":"Pleaser"},{"n":12,"text":"I put off tasks or decisions that feel uncomfortable.","s":"Avoider"},{"n":13,"text":"I hold myself to standards that are very hard to meet.","s":"Stickler"},{"n":14,"text":"I keep myself busy to avoid slowing down.","s":"Restless"},{"n":15,"text":"I find it hard to fully relax, even when things are fine.","s":"Hyper-Vigilant"},{"n":16,"text":"I tend to label situations as “bad” before I fully understand them.","s":"Judge","sub":"circ"},{"n":17,"text":"I find it hard to go with the flow when plans change.","s":"Controller"},{"n":18,"text":"I value logic far more than emotion in understanding life.","s":"Hyper-Rational"},{"n":19,"text":"When things go wrong, I stay down for a long time.","s":"Victim"},{"n":20,"text":"I find it hard to feel content with who I am.","s":"Judge","sub":"self"},{"n":21,"text":"I find it hard to enjoy rest without feeling I should be doing more.","s":"Hyper-Achiever"},{"n":22,"text":"I find it hard to say no, even when I am tired.","s":"Pleaser"},{"n":23,"text":"I stay silent about things that bother me to avoid tension.","s":"Avoider"},{"n":24,"text":"Small imperfections bother me more than they bother most people.","s":"Stickler"},{"n":25,"text":"I usually look forward to the next thing rather than enjoying the present.","s":"Restless"},{"n":26,"text":"I worry more than most people I know.","s":"Hyper-Vigilant"},{"n":27,"text":"I judge others for how they live their lives.","s":"Judge","sub":"others"},{"n":28,"text":"I have a strong need to take charge in most situations.","s":"Controller"},{"n":29,"text":"Other people see me as detached or overly intellectual.","s":"Hyper-Rational"},{"n":30,"text":"I often feel misunderstood by others.","s":"Victim"},{"n":31,"text":"My happiness depends heavily on whether life circumstances go my way.","s":"Judge","sub":"circ"},{"n":32,"text":"I judge my days mostly by how productive they were.","s":"Hyper-Achiever"},{"n":33,"text":"My sense of well-being depends on other people approving of me.","s":"Pleaser"},{"n":34,"text":"I focus on pleasant things so I don’t have to deal with problems.","s":"Avoider"},{"n":35,"text":"I find it hard to enjoy something unless it is done right.","s":"Stickler"},{"n":36,"text":"I get bored easily with ordinary activities such as walking or quiet time.","s":"Restless"},{"n":37,"text":"I feel I must stay constantly alert to avoid problems.","s":"Hyper-Vigilant"},{"n":38,"text":"When I make a mistake, I replay it and put myself down.","s":"Judge","sub":"self"},{"n":39,"text":"I feel frustrated when others do not follow my lead.","s":"Controller"},{"n":40,"text":"I find it hard to be fully present in emotional or playful moments.","s":"Hyper-Rational"},{"n":41,"text":"I dwell on painful feelings rather than moving forward.","s":"Victim"},{"n":42,"text":"I find it easier to criticize people than to appreciate them.","s":"Judge","sub":"others"},{"n":43,"text":"I care a lot about how successful I appear to others.","s":"Hyper-Achiever"},{"n":44,"text":"I sometimes feel resentful that others don’t give back as much as I give.","s":"Pleaser"},{"n":45,"text":"I struggle to find anything worthwhile in difficult experiences.","s":"Judge","sub":"circ"}],"partB":[{"n":46,"q":"Joy: In the past two weeks, how much genuine enjoyment did you feel in ordinary activities (work, walking, meals, conversations)?","t":"Scale","o":null,"scale":["Not at all","Very often"]},{"n":47,"q":"Meaning: In the past two weeks, how much did your daily activities feel meaningful or worthwhile?","t":"Scale","o":null,"scale":["Not at all","Completely"]},{"n":48,"q":"Resilience: In the past two weeks, when something went wrong, how well were you able to recover and move forward?","t":"Scale","o":null,"scale":["Not at all","Very well"]},{"n":49,"q":"Empathy and connection: In the past two weeks, how connected and caring did you feel toward the people around you?","t":"Scale","o":null,"scale":["Not at all","Very connected"]},{"n":50,"q":"Calm presence: In the past two weeks, how often could you feel calm and fully present in what you were doing?","t":"Scale","o":null,"scale":["Never","Almost always"]},{"n":51,"q":"Which everyday activities most support your well-being?","t":"Select all that apply","o":["Work","Walking or exercise","Creative activities","Relationships and time with others","Service or volunteering","Learning","Problem-solving","Faith, reflection, or time in nature"],"scale":null},{"n":52,"q":"Which best describes you today?","t":"Select one","o":["Thriving","Doing okay","Struggling somewhat","Going through a very hard time"],"scale":null}]},"parent":{"title":"Parent Education and Public Policy","short":"Parent Education","who":"Self-report by prospective parents (including expectant parents) and parents or caregivers of children from birth to 18. Prospective parents answer based on how they act with children they know, or how they expect to respond.","instr":"Answer based on how you usually respond to children in your care (or expect to respond). Part B also asks your views on how parent education could be offered. Mark one box per statement.","items":[{"n":1,"text":"I avoid setting limits because I don’t want to upset the child.","s":"Avoider"},{"n":2,"text":"I have strict rules about how things should be done at home.","s":"Stickler"},{"n":3,"text":"I find it hard to give a child my full, undistracted attention.","s":"Restless"},{"n":4,"text":"I worry constantly about a child’s safety, health, or future.","s":"Hyper-Vigilant"},{"n":5,"text":"I criticize myself harshly when I feel I have made a parenting mistake.","s":"Judge","sub":"self"},{"n":6,"text":"I like to decide most things for a child rather than letting them choose.","s":"Controller"},{"n":7,"text":"When a child is upset, I explain or reason rather than comfort.","s":"Hyper-Rational"},{"n":8,"text":"I often feel that parenting is harder for me than for other people.","s":"Victim"},{"n":9,"text":"When a child misbehaves, my first reaction is to point out what they did wrong.","s":"Judge","sub":"others"},{"n":10,"text":"I feel proud as a parent mainly when a child achieves (grades, awards, milestones).","s":"Hyper-Achiever"},{"n":11,"text":"I give in to a child’s demands to avoid them being upset with me.","s":"Pleaser"},{"n":12,"text":"I let disagreements with my co-parent or family about children go unaddressed.","s":"Avoider"},{"n":13,"text":"I get upset when a child is messy or does not do things neatly.","s":"Stickler"},{"n":14,"text":"I keep the family schedule packed with activities.","s":"Restless"},{"n":15,"text":"I restrict children’s activities because of possible risks.","s":"Hyper-Vigilant"},{"n":16,"text":"When something goes wrong with a child (illness, poor grades, a tantrum), I tend to see it as a disaster.","s":"Judge","sub":"circ"},{"n":17,"text":"I get frustrated when a child does something differently from how I showed them.","s":"Controller"},{"n":18,"text":"I find children’s emotional outbursts hard to tolerate.","s":"Hyper-Rational"},{"n":19,"text":"I feel unappreciated by my family for everything I do.","s":"Victim"},{"n":20,"text":"I often feel I am not (or will not be) a good enough parent.","s":"Judge","sub":"self"},{"n":21,"text":"I encourage children toward activities that will look impressive to others.","s":"Hyper-Achiever"},{"n":22,"text":"I care a lot about what other parents, relatives, or teachers think of my parenting.","s":"Pleaser"},{"n":23,"text":"I put off difficult conversations with a child about mistakes, feelings, or hard topics.","s":"Avoider"},{"n":24,"text":"I often correct small details of a child’s work or behavior.","s":"Stickler"},{"n":25,"text":"I check my phone or switch tasks often while spending time with a child.","s":"Restless"},{"n":26,"text":"I feel more on edge about pregnancy, birth, or child development than other parents seem to.","s":"Hyper-Vigilant"},{"n":27,"text":"I notice a child’s mistakes more readily than their efforts.","s":"Judge","sub":"others"},{"n":28,"text":"I find it hard to let a child struggle a little before I step in.","s":"Controller"},{"n":29,"text":"I focus more on teaching facts and skills than on emotional connection.","s":"Hyper-Rational"},{"n":30,"text":"When a child is defiant, I take it personally and feel hurt.","s":"Victim"},{"n":31,"text":"I feel our family circumstances (money, time, housing) make good parenting nearly impossible.","s":"Judge","sub":"circ"},{"n":32,"text":"I feel anxious if a child seems behind other children on milestones.","s":"Hyper-Achiever"},{"n":33,"text":"I find it hard to turn down family members’ advice, even when I disagree with it.","s":"Pleaser"},{"n":34,"text":"I distract a child from difficult feelings rather than helping them talk about them.","s":"Avoider"},{"n":35,"text":"I find it hard to accept “good enough” in parenting.","s":"Stickler"},{"n":36,"text":"I find slow, repetitive routines with children (feeding, bedtime, play) boring.","s":"Restless"},{"n":37,"text":"I find it hard to relax when a child is in someone else’s care.","s":"Hyper-Vigilant"},{"n":38,"text":"I compare my parenting unfavorably with how other parents do it.","s":"Judge","sub":"self"},{"n":39,"text":"I expect children to obey quickly, without discussion.","s":"Controller"},{"n":40,"text":"I find it hard to play or be silly with children.","s":"Hyper-Rational"},{"n":41,"text":"I stay upset for a long time after a hard day with children.","s":"Victim"},{"n":42,"text":"I criticize my co-parent’s or relatives’ way of handling children.","s":"Judge","sub":"others"},{"n":43,"text":"I praise children mostly for results rather than for effort.","s":"Hyper-Achiever"},{"n":44,"text":"I neglect my own rest and needs to keep everyone happy, and sometimes resent it.","s":"Pleaser"},{"n":45,"text":"I focus on what is going wrong in family life more than on what is going well.","s":"Judge","sub":"circ"}],"partB":[{"n":46,"q":"Which best describes your parenting stage?","t":"Select one","o":["Prospective parent (planning)","Expecting a child","New parent (child under 1 year)","Parent of a child aged 1–5","Parent of a child aged 6–12","Parent of a child aged 13–18"],"scale":null},{"n":47,"q":"How many children are in your care?","t":"Select one","o":["None yet","1","2","3 or more"],"scale":null},{"n":48,"q":"Which parent-education format would you be most willing to join?","t":"Select one","o":["Voluntary online course","Program through prenatal care or a pediatric clinic","Community or faith-based group","School-based program","Program linked to an incentive (e.g., tax credit, childcare discount)","None of these"],"scale":null},{"n":49,"q":"In your view, PI-inspired parent education should be:","t":"Select one","o":["Voluntary only","Voluntary, but encouraged with incentives","Required in some situations (e.g., when families request support services)","Required for all new parents","Not sure"],"scale":null},{"n":50,"q":"What concerns you most about such programs?","t":"Select all that apply","o":["Privacy of my answers","Government intrusion or loss of parental autonomy","Time or cost","Fit with my culture or values","Stigma or being labeled a “bad” parent","No major concerns"],"scale":null},{"n":51,"q":"Which parenting skills would you most like support with?","t":"Select up to two","o":["Responding to a child’s mistakes","Encouragement and praise","Communication and listening","Giving undivided attention","Managing my own stress","Setting consistent limits"],"scale":null},{"n":52,"q":"Do you consent to your anonymous answers being used for research on parent-education programs?","t":"Select one","o":["Yes","No"],"scale":null}]}};
+/* =====================================================================
+   EDITING GUIDE  (search for these names with Ctrl+F)
+   ---------------------------------------------------------------------
+   TESTS      The questions: 5 tests x 45 statements + 7 Part B questions.
+              Edit the "text" of any item, or the "q"/"o" of Part B.
+              Each statement has "s" = which Saboteur it belongs to.
+   DESC       One-line description of each Saboteur.
+   KID, WORK, COUPLE, WELL, PARENT
+              Feedback and advice text for each domain.
+   PAIRS      The 10 couple friction pairings and discussion prompts.
+   MATRIX     Work-impact matrix (one string of 7 symbols per Saboteur).
+   score()    Scoring engine (Section 2 of the assignment document).
+   band()     Band cut-offs: 25 / 50 / 75.
+   CSS        Colors and fonts are the variables at the top (:root).
+   SAVE_URL   Google Sheets saving (top of the script). Paste the Web app URL.
+   maybeSave() / hasConsent()   What is sent, and when.
+   ===================================================================== */
+/* ---------- SETTINGS ---------- */
+// To store results in Google Sheets, paste your Apps Script Web app URL between the quotes.
+// Leave it empty ("") to keep everything in the browser only (no saving, no consent box).
+const SAVE_URL = "https://script.google.com/macros/s/AKfycbzeYof3cMgM09a_BsEpgH5Sgg2Pk2KGlSwqnUR-6UPsC-jLAyF1bbbQLQe2USq1ARy4lQ/exec";
+const APP_VERSION = "1.0";
+const STORING = !!SAVE_URL;
+
+/* ---------- THE QUESTIONS ---------- */
+const TESTS = {
+"children": {
+ "title": "Children, Parenting, and Development",
+ "short": "Children",
+ "who": "Completed by a parent/guardian or teacher who knows the child well (child age 6–17). Adolescents aged 13–17 may complete a self-report version by replacing “This child” with “I” in every statement.",
+ "instr": "Think about how this child has usually behaved over the past three months, not on one unusual day. There are no right or wrong answers. Mark one box per statement.",
+ "items": [
+  {
+   "n": 1,
+   "text": "This child avoids disagreements, even when something is clearly bothering them.",
+   "s": "Avoider"
+  },
+  {
+   "n": 2,
+   "text": "This child gets very upset if things are not done “the right way.”",
+   "s": "Stickler"
+  },
+  {
+   "n": 3,
+   "text": "This child has trouble staying with one activity and quickly wants something new.",
+   "s": "Restless"
+  },
+  {
+   "n": 4,
+   "text": "This child worries a lot about things that might go wrong.",
+   "s": "Hyper-Vigilant"
+  },
+  {
+   "n": 5,
+   "text": "This child is very hard on themselves after a mistake (for example, saying “I’m so stupid”).",
+   "s": "Judge",
+   "sub": "self"
+  },
+  {
+   "n": 6,
+   "text": "This child insists on being in charge during games or group activities.",
+   "s": "Controller"
+  },
+  {
+   "n": 7,
+   "text": "This child prefers facts and logic and can be dismissive of other people’s feelings.",
+   "s": "Hyper-Rational"
+  },
+  {
+   "n": 8,
+   "text": "This child often feels that people are picking on them or treating them unfairly.",
+   "s": "Victim"
+  },
+  {
+   "n": 9,
+   "text": "This child often points out what other children or adults are doing wrong.",
+   "s": "Judge",
+   "sub": "others"
+  },
+  {
+   "n": 10,
+   "text": "This child seems to feel good about themselves mainly when they win or get top marks.",
+   "s": "Hyper-Achiever"
+  },
+  {
+   "n": 11,
+   "text": "This child tries very hard to make adults or friends happy, even at their own expense.",
+   "s": "Pleaser"
+  },
+  {
+   "n": 12,
+   "text": "This child puts off homework or chores that feel hard or boring.",
+   "s": "Avoider"
+  },
+  {
+   "n": 13,
+   "text": "This child redoes work many times because it is not neat or perfect enough.",
+   "s": "Stickler"
+  },
+  {
+   "n": 14,
+   "text": "This child gets bored easily, even with activities they chose themselves.",
+   "s": "Restless"
+  },
+  {
+   "n": 15,
+   "text": "This child needs a lot of reassurance before trying something new.",
+   "s": "Hyper-Vigilant"
+  },
+  {
+   "n": 16,
+   "text": "This child tends to see a disappointing event as totally ruined (for example, “This whole day is the worst”).",
+   "s": "Judge",
+   "sub": "circ"
+  },
+  {
+   "n": 17,
+   "text": "This child gets very upset when plans change or others do things differently.",
+   "s": "Controller"
+  },
+  {
+   "n": 18,
+   "text": "This child seems impatient or bored when others talk about their emotions.",
+   "s": "Hyper-Rational"
+  },
+  {
+   "n": 19,
+   "text": "This child withdraws, sulks, or pouts when corrected.",
+   "s": "Victim"
+  },
+  {
+   "n": 20,
+   "text": "This child gets upset or gives up when their work is not perfect or as good as others’ work.",
+   "s": "Judge",
+   "sub": "self"
+  },
+  {
+   "n": 21,
+   "text": "This child is very focused on grades, trophies, or praise.",
+   "s": "Hyper-Achiever"
+  },
+  {
+   "n": 22,
+   "text": "This child finds it very hard to say no.",
+   "s": "Pleaser"
+  },
+  {
+   "n": 23,
+   "text": "This child says “everything is fine” when it seems something is wrong.",
+   "s": "Avoider"
+  },
+  {
+   "n": 24,
+   "text": "This child is bothered when others do not follow rules exactly.",
+   "s": "Stickler"
+  },
+  {
+   "n": 25,
+   "text": "This child rarely seems satisfied or settled with what they are doing.",
+   "s": "Restless"
+  },
+  {
+   "n": 26,
+   "text": "This child is easily alarmed by small risks or changes in routine.",
+   "s": "Hyper-Vigilant"
+  },
+  {
+   "n": 27,
+   "text": "This child quickly decides that other kids are “annoying,” “dumb,” or “mean.”",
+   "s": "Judge",
+   "sub": "others"
+  },
+  {
+   "n": 28,
+   "text": "This child pushes other children to do things their way.",
+   "s": "Controller"
+  },
+  {
+   "n": 29,
+   "text": "This child often corrects others or argues to prove they are right.",
+   "s": "Hyper-Rational"
+  },
+  {
+   "n": 30,
+   "text": "This child stays upset for a long time after a disappointment.",
+   "s": "Victim"
+  },
+  {
+   "n": 31,
+   "text": "This child complains that things are unfair more often than their peers do.",
+   "s": "Judge",
+   "sub": "circ"
+  },
+  {
+   "n": 32,
+   "text": "This child loses interest in an activity if they cannot be the best at it.",
+   "s": "Hyper-Achiever"
+  },
+  {
+   "n": 33,
+   "text": "This child seems to need frequent approval or praise from others.",
+   "s": "Pleaser"
+  },
+  {
+   "n": 34,
+   "text": "This child goes along with others rather than saying what they want.",
+   "s": "Avoider"
+  },
+  {
+   "n": 35,
+   "text": "This child has trouble relaxing when things are messy or out of order.",
+   "s": "Stickler"
+  },
+  {
+   "n": 36,
+   "text": "This child starts many projects or games but seldom finishes them.",
+   "s": "Restless"
+  },
+  {
+   "n": 37,
+   "text": "This child seems more anxious or on edge than other children their age.",
+   "s": "Hyper-Vigilant"
+  },
+  {
+   "n": 38,
+   "text": "This child rarely feels proud of their own effort, even when they do well.",
+   "s": "Judge",
+   "sub": "self"
+  },
+  {
+   "n": 39,
+   "text": "This child finds it hard to take turns or let others lead.",
+   "s": "Controller"
+  },
+  {
+   "n": 40,
+   "text": "This child explains things logically but finds it hard to express their own feelings.",
+   "s": "Hyper-Rational"
+  },
+  {
+   "n": 41,
+   "text": "This child tends to seek sympathy rather than try to solve the problem.",
+   "s": "Victim"
+  },
+  {
+   "n": 42,
+   "text": "This child finds it hard to say something kind about a classmate or sibling.",
+   "s": "Judge",
+   "sub": "others"
+  },
+  {
+   "n": 43,
+   "text": "This child often compares their results with other children’s results.",
+   "s": "Hyper-Achiever"
+  },
+  {
+   "n": 44,
+   "text": "This child gives up their own turn, toy, or choice to keep others happy.",
+   "s": "Pleaser"
+  },
+  {
+   "n": 45,
+   "text": "This child focuses on what is wrong in a situation rather than what could be fun or interesting.",
+   "s": "Judge",
+   "sub": "circ"
+  }
+ ],
+ "partB": [
+  {
+   "n": 46,
+   "q": "Who is completing this questionnaire?",
+   "t": "Select one",
+   "o": [
+    "Parent or guardian",
+    "Teacher",
+    "Other caregiver (grandparent, coach, etc.)",
+    "The young person (self-report, age 13–17)"
+   ],
+   "scale": null
+  },
+  {
+   "n": 47,
+   "q": "What is the child’s age group?",
+   "t": "Select one",
+   "o": [
+    "6–8 years",
+    "9–12 years",
+    "13–15 years",
+    "16–17 years"
+   ],
+   "scale": null
+  },
+  {
+   "n": 48,
+   "q": "In which setting have you mostly observed the child?",
+   "t": "Select one",
+   "o": [
+    "Home",
+    "School or classroom",
+    "Both home and school",
+    "Activities (sports, clubs, faith or community groups)"
+   ],
+   "scale": null
+  },
+  {
+   "n": 49,
+   "q": "How long have you known or observed this child?",
+   "t": "Select one",
+   "o": [
+    "Less than 6 months",
+    "6–12 months",
+    "1–3 years",
+    "More than 3 years"
+   ],
+   "scale": null
+  },
+  {
+   "n": 50,
+   "q": "Which qualities would you most like to help this child strengthen?",
+   "t": "Select up to two",
+   "o": [
+    "Curiosity",
+    "Empathy",
+    "Creativity",
+    "Resilience",
+    "Problem-solving",
+    "Confidence"
+   ],
+   "scale": null
+  },
+  {
+   "n": 51,
+   "q": "Has the child experienced any major changes in the past 12 months?",
+   "t": "Select all that apply",
+   "o": [
+    "Moved home or school",
+    "New sibling or change in household",
+    "Family separation, illness, or loss",
+    "Other significant change",
+    "No major changes"
+   ],
+   "scale": null
+  },
+  {
+   "n": 52,
+   "q": "What kind of support would be most helpful to you?",
+   "t": "Select all that apply",
+   "o": [
+    "Ideas for home",
+    "Ideas for the classroom",
+    "Talking with a school counselor or pediatric professional",
+    "Age-appropriate resources for the child",
+    "Not sure"
+   ],
+   "scale": null
+  }
+ ]
+},
+"work": {
+ "title": "Workplace and Professional Development",
+ "short": "Workplace",
+ "who": "Self-report by the individual employee, manager, or student intern. Completed voluntarily; results belong to the respondent.",
+ "instr": "Answer based on how you usually think and act at work over the past three months. Be honest; this is for your own development and is not a performance evaluation. Mark one box per statement.",
+ "items": [
+  {
+   "n": 1,
+   "text": "I avoid raising disagreements in meetings, even when I think a decision is wrong.",
+   "s": "Avoider"
+  },
+  {
+   "n": 2,
+   "text": "I have trouble submitting work until it is perfect, even when “good enough” would do.",
+   "s": "Stickler"
+  },
+  {
+   "n": 3,
+   "text": "I get bored quickly with routine work and look for something new.",
+   "s": "Restless"
+  },
+  {
+   "n": 4,
+   "text": "I constantly worry about what might go wrong on projects or in my job.",
+   "s": "Hyper-Vigilant"
+  },
+  {
+   "n": 5,
+   "text": "I am harshly critical of myself when my work falls short.",
+   "s": "Judge",
+   "sub": "self"
+  },
+  {
+   "n": 6,
+   "text": "I find it hard to delegate because others may not do the work the way I would.",
+   "s": "Controller"
+  },
+  {
+   "n": 7,
+   "text": "I focus on data and logic and tend to overlook how people feel about decisions.",
+   "s": "Hyper-Rational"
+  },
+  {
+   "n": 8,
+   "text": "When I receive criticism at work, I tend to withdraw or feel hurt for a long time.",
+   "s": "Victim"
+  },
+  {
+   "n": 9,
+   "text": "I notice colleagues’ shortcomings more readily than their contributions.",
+   "s": "Judge",
+   "sub": "others"
+  },
+  {
+   "n": 10,
+   "text": "My sense of self-worth depends mostly on my work performance and results.",
+   "s": "Hyper-Achiever"
+  },
+  {
+   "n": 11,
+   "text": "I say yes to extra work even when I am already overloaded.",
+   "s": "Pleaser"
+  },
+  {
+   "n": 12,
+   "text": "I put off difficult conversations with colleagues or my manager.",
+   "s": "Avoider"
+  },
+  {
+   "n": 13,
+   "text": "I am frustrated when others do not follow procedures or standards precisely.",
+   "s": "Stickler"
+  },
+  {
+   "n": 14,
+   "text": "I start many initiatives but struggle to see them through.",
+   "s": "Restless"
+  },
+  {
+   "n": 15,
+   "text": "I find it hard to trust that colleagues will deliver without close checking.",
+   "s": "Hyper-Vigilant"
+  },
+  {
+   "n": 16,
+   "text": "When a project goes wrong, I tend to see it as a disaster rather than a learning opportunity.",
+   "s": "Judge",
+   "sub": "circ"
+  },
+  {
+   "n": 17,
+   "text": "I get anxious when I am not in control of how a project is run.",
+   "s": "Controller"
+  },
+  {
+   "n": 18,
+   "text": "I get impatient with colleagues who bring emotion into work discussions.",
+   "s": "Hyper-Rational"
+  },
+  {
+   "n": 19,
+   "text": "I often feel my contributions are overlooked or unappreciated.",
+   "s": "Victim"
+  },
+  {
+   "n": 20,
+   "text": "I replay my mistakes at work long after they have been fixed.",
+   "s": "Judge",
+   "sub": "self"
+  },
+  {
+   "n": 21,
+   "text": "I adjust how I present myself to impress people who matter for my career.",
+   "s": "Hyper-Achiever"
+  },
+  {
+   "n": 22,
+   "text": "I find it hard to give honest negative feedback because I don’t want to upset people.",
+   "s": "Pleaser"
+  },
+  {
+   "n": 23,
+   "text": "I delay important tasks that feel unpleasant or uncomfortable.",
+   "s": "Avoider"
+  },
+  {
+   "n": 24,
+   "text": "Colleagues have told me I focus too much on details.",
+   "s": "Stickler"
+  },
+  {
+   "n": 25,
+   "text": "I rarely feel settled in my current role and often think about the next move.",
+   "s": "Restless"
+  },
+  {
+   "n": 26,
+   "text": "I feel more anxious about job security or making mistakes than most people I work with.",
+   "s": "Hyper-Vigilant"
+  },
+  {
+   "n": 27,
+   "text": "I often think my coworkers or managers are less competent than they should be.",
+   "s": "Judge",
+   "sub": "others"
+  },
+  {
+   "n": 28,
+   "text": "I tend to take over discussions or decisions in team settings.",
+   "s": "Controller"
+  },
+  {
+   "n": 29,
+   "text": "Others have described me as cold, distant, or intellectually arrogant.",
+   "s": "Hyper-Rational"
+  },
+  {
+   "n": 30,
+   "text": "I feel my difficulties at work are mostly caused by other people or bad luck.",
+   "s": "Victim"
+  },
+  {
+   "n": 31,
+   "text": "I often feel frustrated that my organization or job conditions are not what they should be.",
+   "s": "Judge",
+   "sub": "circ"
+  },
+  {
+   "n": 32,
+   "text": "I find it hard to slow down or rest, even after reaching a goal.",
+   "s": "Hyper-Achiever"
+  },
+  {
+   "n": 33,
+   "text": "Being liked by my colleagues and manager matters a great deal to me.",
+   "s": "Pleaser"
+  },
+  {
+   "n": 34,
+   "text": "I let workplace conflicts go unaddressed until they grow into bigger problems.",
+   "s": "Avoider"
+  },
+  {
+   "n": 35,
+   "text": "I find it hard to adapt when a process is changed or done less rigorously.",
+   "s": "Stickler"
+  },
+  {
+   "n": 36,
+   "text": "I keep myself constantly busy to avoid feeling stuck.",
+   "s": "Restless"
+  },
+  {
+   "n": 37,
+   "text": "I spend a lot of energy anticipating risks that rarely happen.",
+   "s": "Hyper-Vigilant"
+  },
+  {
+   "n": 38,
+   "text": "I rarely feel satisfied with my own performance, even after positive feedback.",
+   "s": "Judge",
+   "sub": "self"
+  },
+  {
+   "n": 39,
+   "text": "Colleagues have told me I can be too forceful or controlling.",
+   "s": "Controller"
+  },
+  {
+   "n": 40,
+   "text": "I prefer to solve problems alone rather than deal with team dynamics.",
+   "s": "Hyper-Rational"
+  },
+  {
+   "n": 41,
+   "text": "When things go badly at work, I stay discouraged for a long time.",
+   "s": "Victim"
+  },
+  {
+   "n": 42,
+   "text": "I give criticism to colleagues far more often than recognition.",
+   "s": "Judge",
+   "sub": "others"
+  },
+  {
+   "n": 43,
+   "text": "Recognition, titles, and status at work are very important to me.",
+   "s": "Hyper-Achiever"
+  },
+  {
+   "n": 44,
+   "text": "I help others so much that I fall behind on my own priorities and feel resentful.",
+   "s": "Pleaser"
+  },
+  {
+   "n": 45,
+   "text": "I dwell on what is wrong with my workplace more than on what I can do about it.",
+   "s": "Judge",
+   "sub": "circ"
+  }
+ ],
+ "partB": [
+  {
+   "n": 46,
+   "q": "Consent: I am completing this assessment voluntarily and understand that my results belong to me and will not be shared without my permission.",
+   "t": "Select one",
+   "o": [
+    "Yes, I agree and wish to continue",
+    "No (please stop here; no data will be kept)"
+   ],
+   "scale": null
+  },
+  {
+   "n": 47,
+   "q": "Which best describes your current role?",
+   "t": "Select one",
+   "o": [
+    "Individual contributor",
+    "Team lead or supervisor",
+    "Manager",
+    "Senior leader or executive",
+    "Student, intern, or trainee"
+   ],
+   "scale": null
+  },
+  {
+   "n": 48,
+   "q": "How many years of work experience do you have?",
+   "t": "Select one",
+   "o": [
+    "Less than 2 years",
+    "2–5 years",
+    "6–10 years",
+    "More than 10 years"
+   ],
+   "scale": null
+  },
+  {
+   "n": 49,
+   "q": "What is your main work setting?",
+   "t": "Select one",
+   "o": [
+    "On-site",
+    "Hybrid",
+    "Remote"
+   ],
+   "scale": null
+  },
+  {
+   "n": 50,
+   "q": "Which areas would you most like to improve?",
+   "t": "Select up to two",
+   "o": [
+    "Communication",
+    "Teamwork",
+    "Leadership",
+    "Decision-making",
+    "Creativity",
+    "Handling conflict",
+    "Job performance and workload"
+   ],
+   "scale": null
+  },
+  {
+   "n": 51,
+   "q": "Where do you experience the most tension or frustration at work?",
+   "t": "Select all that apply",
+   "o": [
+    "Deadlines and workload",
+    "Meetings and decision-making",
+    "Giving or receiving feedback",
+    "Conflict with colleagues",
+    "Unclear expectations",
+    "Relationship with my manager",
+    "Not sure, but it is a recurring pattern"
+   ],
+   "scale": null
+  },
+  {
+   "n": 52,
+   "q": "How would you like your results to be used?",
+   "t": "Select one",
+   "o": [
+    "Keep private (only I see them)",
+    "Share with a coach or mentor I choose",
+    "Share with my manager for a development conversation",
+    "Include anonymously in a team summary (only if 5 or more people take part)"
+   ],
+   "scale": null
+  }
+ ]
+},
+"couple": {
+ "title": "Marriage and Life Partnerships",
+ "short": "Partnership",
+ "who": "Each partner completes the test separately and privately, without discussing answers, before or during a committed relationship. Individual results can then be combined into a Couple Interaction Map if both partners consent.",
+ "instr": "Answer based on how you usually think, feel, and act in your relationship (or, if not yet living together, how you usually act in close relationships). Answer for yourself only. Mark one box per statement.",
+ "items": [
+  {
+   "n": 1,
+   "text": "I avoid bringing up issues with my partner to keep the peace.",
+   "s": "Avoider"
+  },
+  {
+   "n": 2,
+   "text": "I have firm standards for how household tasks should be done.",
+   "s": "Stickler"
+  },
+  {
+   "n": 3,
+   "text": "I get bored with routines at home and look for new excitement.",
+   "s": "Restless"
+  },
+  {
+   "n": 4,
+   "text": "I worry a lot about our finances, health, or future as a couple.",
+   "s": "Hyper-Vigilant"
+  },
+  {
+   "n": 5,
+   "text": "I blame myself harshly when something goes wrong in our relationship.",
+   "s": "Judge",
+   "sub": "self"
+  },
+  {
+   "n": 6,
+   "text": "I prefer to make the major decisions in our household.",
+   "s": "Controller"
+  },
+  {
+   "n": 7,
+   "text": "I respond to my partner’s emotions with logic or solutions rather than empathy.",
+   "s": "Hyper-Rational"
+  },
+  {
+   "n": 8,
+   "text": "I often feel my partner does not understand or appreciate me.",
+   "s": "Victim"
+  },
+  {
+   "n": 9,
+   "text": "I notice my partner’s faults and habits more than their good qualities.",
+   "s": "Judge",
+   "sub": "others"
+  },
+  {
+   "n": 10,
+   "text": "My mood at home depends a lot on how my work or career is going.",
+   "s": "Hyper-Achiever"
+  },
+  {
+   "n": 11,
+   "text": "I put my partner’s needs ahead of my own even when it hurts me.",
+   "s": "Pleaser"
+  },
+  {
+   "n": 12,
+   "text": "I change the subject or go quiet when a disagreement starts.",
+   "s": "Avoider"
+  },
+  {
+   "n": 13,
+   "text": "I get irritated when my partner is messy, late, or disorganized.",
+   "s": "Stickler"
+  },
+  {
+   "n": 14,
+   "text": "I want to change plans, places, or projects more often than my partner does.",
+   "s": "Restless"
+  },
+  {
+   "n": 15,
+   "text": "I often worry that my partner may lose interest in me or leave.",
+   "s": "Hyper-Vigilant"
+  },
+  {
+   "n": 16,
+   "text": "When our plans fall apart, I see it as a sign that things are going badly overall.",
+   "s": "Judge",
+   "sub": "circ"
+  },
+  {
+   "n": 17,
+   "text": "I feel uneasy when my partner handles things (money, plans, chores) their own way.",
+   "s": "Controller"
+  },
+  {
+   "n": 18,
+   "text": "I find emotional conversations with my partner tiring or unnecessary.",
+   "s": "Hyper-Rational"
+  },
+  {
+   "n": 19,
+   "text": "When my partner criticizes me, I withdraw, sulk, or give the silent treatment.",
+   "s": "Victim"
+  },
+  {
+   "n": 20,
+   "text": "I often feel I am not a good enough partner.",
+   "s": "Judge",
+   "sub": "self"
+  },
+  {
+   "n": 21,
+   "text": "It is important to me that we look successful to family and friends.",
+   "s": "Hyper-Achiever"
+  },
+  {
+   "n": 22,
+   "text": "I agree to things I don’t really want to avoid disappointing my partner or their family.",
+   "s": "Pleaser"
+  },
+  {
+   "n": 23,
+   "text": "I postpone conversations about money, family, or the future because they feel uncomfortable.",
+   "s": "Avoider"
+  },
+  {
+   "n": 24,
+   "text": "I redo tasks my partner has already done because they were not done right.",
+   "s": "Stickler"
+  },
+  {
+   "n": 25,
+   "text": "I find it hard to simply enjoy quiet time together.",
+   "s": "Restless"
+  },
+  {
+   "n": 26,
+   "text": "I check details (bills, plans, whereabouts) more than my partner thinks is necessary.",
+   "s": "Hyper-Vigilant"
+  },
+  {
+   "n": 27,
+   "text": "I criticize my partner more often than I appreciate them.",
+   "s": "Judge",
+   "sub": "others"
+  },
+  {
+   "n": 28,
+   "text": "I push for my way in disagreements until my partner gives in.",
+   "s": "Controller"
+  },
+  {
+   "n": 29,
+   "text": "My partner has said I seem distant or hard to reach emotionally.",
+   "s": "Hyper-Rational"
+  },
+  {
+   "n": 30,
+   "text": "I feel I sacrifice more in this relationship than my partner does.",
+   "s": "Victim"
+  },
+  {
+   "n": 31,
+   "text": "I often feel frustrated about our living situation, finances, or family circumstances.",
+   "s": "Judge",
+   "sub": "circ"
+  },
+  {
+   "n": 32,
+   "text": "I give more energy to my goals and achievements than to time with my partner.",
+   "s": "Hyper-Achiever"
+  },
+  {
+   "n": 33,
+   "text": "I need frequent reassurance that my partner is happy with me.",
+   "s": "Pleaser"
+  },
+  {
+   "n": 34,
+   "text": "Small unresolved issues between us tend to build up over time.",
+   "s": "Avoider"
+  },
+  {
+   "n": 35,
+   "text": "I find it hard to let small imperfections in our home or routines go.",
+   "s": "Stickler"
+  },
+  {
+   "n": 36,
+   "text": "I keep myself so busy that we have little unhurried time together.",
+   "s": "Restless"
+  },
+  {
+   "n": 37,
+   "text": "I find it hard to relax, even when things between us are going well.",
+   "s": "Hyper-Vigilant"
+  },
+  {
+   "n": 38,
+   "text": "I replay things I said to my partner and criticize myself for them.",
+   "s": "Judge",
+   "sub": "self"
+  },
+  {
+   "n": 39,
+   "text": "My partner has told me I can be controlling.",
+   "s": "Controller"
+  },
+  {
+   "n": 40,
+   "text": "I believe most relationship problems would disappear if we were both more logical.",
+   "s": "Hyper-Rational"
+  },
+  {
+   "n": 41,
+   "text": "After an argument, I stay hurt for a long time.",
+   "s": "Victim"
+  },
+  {
+   "n": 42,
+   "text": "I compare my partner unfavorably with other people’s partners.",
+   "s": "Judge",
+   "sub": "others"
+  },
+  {
+   "n": 43,
+   "text": "I feel worthy as a partner mainly when I am providing or succeeding.",
+   "s": "Hyper-Achiever"
+  },
+  {
+   "n": 44,
+   "text": "I give a lot in the relationship and sometimes quietly resent it.",
+   "s": "Pleaser"
+  },
+  {
+   "n": 45,
+   "text": "I focus on what is missing in our relationship more than on what is working.",
+   "s": "Judge",
+   "sub": "circ"
+  }
+ ],
+ "partB": [
+  {
+   "n": 46,
+   "q": "What stage is your relationship in?",
+   "t": "Select one",
+   "o": [
+    "Dating",
+    "Engaged or planning to marry",
+    "Married or life partners, less than 3 years",
+    "Married or life partners, 3 years or more"
+   ],
+   "scale": null
+  },
+  {
+   "n": 47,
+   "q": "Do you currently live together?",
+   "t": "Select one",
+   "o": [
+    "Yes",
+    "No",
+    "Planning to soon"
+   ],
+   "scale": null
+  },
+  {
+   "n": 48,
+   "q": "Is your partner also completing this assessment?",
+   "t": "Select one",
+   "o": [
+    "Yes",
+    "No",
+    "Not yet, but I plan to ask"
+   ],
+   "scale": null
+  },
+  {
+   "n": 49,
+   "q": "In which areas do you experience the most tension?",
+   "t": "Select all that apply",
+   "o": [
+    "Finances",
+    "Household tasks and routines",
+    "Extended family or in-laws",
+    "Parenting or plans for children",
+    "Emotional communication",
+    "Time together",
+    "Major decisions",
+    "None at present"
+   ],
+   "scale": null
+  },
+  {
+   "n": 50,
+   "q": "How do you usually handle a disagreement with your partner?",
+   "t": "Select one",
+   "o": [
+    "Talk it through right away",
+    "Take time to cool off, then talk",
+    "Avoid it and hope it passes",
+    "One of us usually decides"
+   ],
+   "scale": null
+  },
+  {
+   "n": 51,
+   "q": "What do you most hope to gain from this assessment?",
+   "t": "Select all that apply",
+   "o": [
+    "Understand my own triggers",
+    "Understand my partner better",
+    "Learn conflict-management strategies",
+    "Prepare for marriage or cohabitation"
+   ],
+   "scale": null
+  },
+  {
+   "n": 52,
+   "q": "Do you consent to sharing your results with your partner?",
+   "t": "Select one",
+   "o": [
+    "Yes, share my full results",
+    "Share only my top patterns",
+    "No, keep my results private"
+   ],
+   "scale": null
+  }
+ ]
+},
+"wellbeing": {
+ "title": "Individual Well-being and Lifelong Flourishing",
+ "short": "Well-being",
+ "who": "Self-report by any adult. Designed to be repeated (for example, before and after six weeks of mental-fitness practice) to track change.",
+ "instr": "Part A: answer based on how you usually think and feel over the past three months. Part B (questions 46–50): rate how things have been in the past two weeks on a 0–10 scale. Mark one box per statement.",
+ "items": [
+  {
+   "n": 1,
+   "text": "I avoid unpleasant feelings by keeping myself distracted.",
+   "s": "Avoider"
+  },
+  {
+   "n": 2,
+   "text": "I feel uneasy when things around me are not orderly.",
+   "s": "Stickler"
+  },
+  {
+   "n": 3,
+   "text": "I rarely feel at peace with what I am doing in the moment.",
+   "s": "Restless"
+  },
+  {
+   "n": 4,
+   "text": "My mind often scans for what could go wrong.",
+   "s": "Hyper-Vigilant"
+  },
+  {
+   "n": 5,
+   "text": "I criticize myself harshly when I fall short of my own expectations.",
+   "s": "Judge",
+   "sub": "self"
+  },
+  {
+   "n": 6,
+   "text": "I feel anxious when I cannot control how things turn out.",
+   "s": "Controller"
+  },
+  {
+   "n": 7,
+   "text": "I analyze my feelings rather than actually feeling them.",
+   "s": "Hyper-Rational"
+  },
+  {
+   "n": 8,
+   "text": "I feel that life is harder for me than for most people.",
+   "s": "Victim"
+  },
+  {
+   "n": 9,
+   "text": "I quickly notice faults in the people around me.",
+   "s": "Judge",
+   "sub": "others"
+  },
+  {
+   "n": 10,
+   "text": "I feel worthwhile mainly when I am accomplishing something.",
+   "s": "Hyper-Achiever"
+  },
+  {
+   "n": 11,
+   "text": "I often neglect my own needs to take care of others.",
+   "s": "Pleaser"
+  },
+  {
+   "n": 12,
+   "text": "I put off tasks or decisions that feel uncomfortable.",
+   "s": "Avoider"
+  },
+  {
+   "n": 13,
+   "text": "I hold myself to standards that are very hard to meet.",
+   "s": "Stickler"
+  },
+  {
+   "n": 14,
+   "text": "I keep myself busy to avoid slowing down.",
+   "s": "Restless"
+  },
+  {
+   "n": 15,
+   "text": "I find it hard to fully relax, even when things are fine.",
+   "s": "Hyper-Vigilant"
+  },
+  {
+   "n": 16,
+   "text": "I tend to label situations as “bad” before I fully understand them.",
+   "s": "Judge",
+   "sub": "circ"
+  },
+  {
+   "n": 17,
+   "text": "I find it hard to go with the flow when plans change.",
+   "s": "Controller"
+  },
+  {
+   "n": 18,
+   "text": "I value logic far more than emotion in understanding life.",
+   "s": "Hyper-Rational"
+  },
+  {
+   "n": 19,
+   "text": "When things go wrong, I stay down for a long time.",
+   "s": "Victim"
+  },
+  {
+   "n": 20,
+   "text": "I find it hard to feel content with who I am.",
+   "s": "Judge",
+   "sub": "self"
+  },
+  {
+   "n": 21,
+   "text": "I find it hard to enjoy rest without feeling I should be doing more.",
+   "s": "Hyper-Achiever"
+  },
+  {
+   "n": 22,
+   "text": "I find it hard to say no, even when I am tired.",
+   "s": "Pleaser"
+  },
+  {
+   "n": 23,
+   "text": "I stay silent about things that bother me to avoid tension.",
+   "s": "Avoider"
+  },
+  {
+   "n": 24,
+   "text": "Small imperfections bother me more than they bother most people.",
+   "s": "Stickler"
+  },
+  {
+   "n": 25,
+   "text": "I usually look forward to the next thing rather than enjoying the present.",
+   "s": "Restless"
+  },
+  {
+   "n": 26,
+   "text": "I worry more than most people I know.",
+   "s": "Hyper-Vigilant"
+  },
+  {
+   "n": 27,
+   "text": "I judge others for how they live their lives.",
+   "s": "Judge",
+   "sub": "others"
+  },
+  {
+   "n": 28,
+   "text": "I have a strong need to take charge in most situations.",
+   "s": "Controller"
+  },
+  {
+   "n": 29,
+   "text": "Other people see me as detached or overly intellectual.",
+   "s": "Hyper-Rational"
+  },
+  {
+   "n": 30,
+   "text": "I often feel misunderstood by others.",
+   "s": "Victim"
+  },
+  {
+   "n": 31,
+   "text": "My happiness depends heavily on whether life circumstances go my way.",
+   "s": "Judge",
+   "sub": "circ"
+  },
+  {
+   "n": 32,
+   "text": "I judge my days mostly by how productive they were.",
+   "s": "Hyper-Achiever"
+  },
+  {
+   "n": 33,
+   "text": "My sense of well-being depends on other people approving of me.",
+   "s": "Pleaser"
+  },
+  {
+   "n": 34,
+   "text": "I focus on pleasant things so I don’t have to deal with problems.",
+   "s": "Avoider"
+  },
+  {
+   "n": 35,
+   "text": "I find it hard to enjoy something unless it is done right.",
+   "s": "Stickler"
+  },
+  {
+   "n": 36,
+   "text": "I get bored easily with ordinary activities such as walking or quiet time.",
+   "s": "Restless"
+  },
+  {
+   "n": 37,
+   "text": "I feel I must stay constantly alert to avoid problems.",
+   "s": "Hyper-Vigilant"
+  },
+  {
+   "n": 38,
+   "text": "When I make a mistake, I replay it and put myself down.",
+   "s": "Judge",
+   "sub": "self"
+  },
+  {
+   "n": 39,
+   "text": "I feel frustrated when others do not follow my lead.",
+   "s": "Controller"
+  },
+  {
+   "n": 40,
+   "text": "I find it hard to be fully present in emotional or playful moments.",
+   "s": "Hyper-Rational"
+  },
+  {
+   "n": 41,
+   "text": "I dwell on painful feelings rather than moving forward.",
+   "s": "Victim"
+  },
+  {
+   "n": 42,
+   "text": "I find it easier to criticize people than to appreciate them.",
+   "s": "Judge",
+   "sub": "others"
+  },
+  {
+   "n": 43,
+   "text": "I care a lot about how successful I appear to others.",
+   "s": "Hyper-Achiever"
+  },
+  {
+   "n": 44,
+   "text": "I sometimes feel resentful that others don’t give back as much as I give.",
+   "s": "Pleaser"
+  },
+  {
+   "n": 45,
+   "text": "I struggle to find anything worthwhile in difficult experiences.",
+   "s": "Judge",
+   "sub": "circ"
+  }
+ ],
+ "partB": [
+  {
+   "n": 46,
+   "q": "Joy: In the past two weeks, how much genuine enjoyment did you feel in ordinary activities (work, walking, meals, conversations)?",
+   "t": "Scale",
+   "o": null,
+   "scale": [
+    "Not at all",
+    "Very often"
+   ]
+  },
+  {
+   "n": 47,
+   "q": "Meaning: In the past two weeks, how much did your daily activities feel meaningful or worthwhile?",
+   "t": "Scale",
+   "o": null,
+   "scale": [
+    "Not at all",
+    "Completely"
+   ]
+  },
+  {
+   "n": 48,
+   "q": "Resilience: In the past two weeks, when something went wrong, how well were you able to recover and move forward?",
+   "t": "Scale",
+   "o": null,
+   "scale": [
+    "Not at all",
+    "Very well"
+   ]
+  },
+  {
+   "n": 49,
+   "q": "Empathy and connection: In the past two weeks, how connected and caring did you feel toward the people around you?",
+   "t": "Scale",
+   "o": null,
+   "scale": [
+    "Not at all",
+    "Very connected"
+   ]
+  },
+  {
+   "n": 50,
+   "q": "Calm presence: In the past two weeks, how often could you feel calm and fully present in what you were doing?",
+   "t": "Scale",
+   "o": null,
+   "scale": [
+    "Never",
+    "Almost always"
+   ]
+  },
+  {
+   "n": 51,
+   "q": "Which everyday activities most support your well-being?",
+   "t": "Select all that apply",
+   "o": [
+    "Work",
+    "Walking or exercise",
+    "Creative activities",
+    "Relationships and time with others",
+    "Service or volunteering",
+    "Learning",
+    "Problem-solving",
+    "Faith, reflection, or time in nature"
+   ],
+   "scale": null
+  },
+  {
+   "n": 52,
+   "q": "Which best describes you today?",
+   "t": "Select one",
+   "o": [
+    "Thriving",
+    "Doing okay",
+    "Struggling somewhat",
+    "Going through a very hard time"
+   ],
+   "scale": null
+  }
+ ]
+},
+"parent": {
+ "title": "Parent Education and Public Policy",
+ "short": "Parent Education",
+ "who": "Self-report by prospective parents (including expectant parents) and parents or caregivers of children from birth to 18. Prospective parents answer based on how they act with children they know, or how they expect to respond.",
+ "instr": "Answer based on how you usually respond to children in your care (or expect to respond). Part B also asks your views on how parent education could be offered. Mark one box per statement.",
+ "items": [
+  {
+   "n": 1,
+   "text": "I avoid setting limits because I don’t want to upset the child.",
+   "s": "Avoider"
+  },
+  {
+   "n": 2,
+   "text": "I have strict rules about how things should be done at home.",
+   "s": "Stickler"
+  },
+  {
+   "n": 3,
+   "text": "I find it hard to give a child my full, undistracted attention.",
+   "s": "Restless"
+  },
+  {
+   "n": 4,
+   "text": "I worry constantly about a child’s safety, health, or future.",
+   "s": "Hyper-Vigilant"
+  },
+  {
+   "n": 5,
+   "text": "I criticize myself harshly when I feel I have made a parenting mistake.",
+   "s": "Judge",
+   "sub": "self"
+  },
+  {
+   "n": 6,
+   "text": "I like to decide most things for a child rather than letting them choose.",
+   "s": "Controller"
+  },
+  {
+   "n": 7,
+   "text": "When a child is upset, I explain or reason rather than comfort.",
+   "s": "Hyper-Rational"
+  },
+  {
+   "n": 8,
+   "text": "I often feel that parenting is harder for me than for other people.",
+   "s": "Victim"
+  },
+  {
+   "n": 9,
+   "text": "When a child misbehaves, my first reaction is to point out what they did wrong.",
+   "s": "Judge",
+   "sub": "others"
+  },
+  {
+   "n": 10,
+   "text": "I feel proud as a parent mainly when a child achieves (grades, awards, milestones).",
+   "s": "Hyper-Achiever"
+  },
+  {
+   "n": 11,
+   "text": "I give in to a child’s demands to avoid them being upset with me.",
+   "s": "Pleaser"
+  },
+  {
+   "n": 12,
+   "text": "I let disagreements with my co-parent or family about children go unaddressed.",
+   "s": "Avoider"
+  },
+  {
+   "n": 13,
+   "text": "I get upset when a child is messy or does not do things neatly.",
+   "s": "Stickler"
+  },
+  {
+   "n": 14,
+   "text": "I keep the family schedule packed with activities.",
+   "s": "Restless"
+  },
+  {
+   "n": 15,
+   "text": "I restrict children’s activities because of possible risks.",
+   "s": "Hyper-Vigilant"
+  },
+  {
+   "n": 16,
+   "text": "When something goes wrong with a child (illness, poor grades, a tantrum), I tend to see it as a disaster.",
+   "s": "Judge",
+   "sub": "circ"
+  },
+  {
+   "n": 17,
+   "text": "I get frustrated when a child does something differently from how I showed them.",
+   "s": "Controller"
+  },
+  {
+   "n": 18,
+   "text": "I find children’s emotional outbursts hard to tolerate.",
+   "s": "Hyper-Rational"
+  },
+  {
+   "n": 19,
+   "text": "I feel unappreciated by my family for everything I do.",
+   "s": "Victim"
+  },
+  {
+   "n": 20,
+   "text": "I often feel I am not (or will not be) a good enough parent.",
+   "s": "Judge",
+   "sub": "self"
+  },
+  {
+   "n": 21,
+   "text": "I encourage children toward activities that will look impressive to others.",
+   "s": "Hyper-Achiever"
+  },
+  {
+   "n": 22,
+   "text": "I care a lot about what other parents, relatives, or teachers think of my parenting.",
+   "s": "Pleaser"
+  },
+  {
+   "n": 23,
+   "text": "I put off difficult conversations with a child about mistakes, feelings, or hard topics.",
+   "s": "Avoider"
+  },
+  {
+   "n": 24,
+   "text": "I often correct small details of a child’s work or behavior.",
+   "s": "Stickler"
+  },
+  {
+   "n": 25,
+   "text": "I check my phone or switch tasks often while spending time with a child.",
+   "s": "Restless"
+  },
+  {
+   "n": 26,
+   "text": "I feel more on edge about pregnancy, birth, or child development than other parents seem to.",
+   "s": "Hyper-Vigilant"
+  },
+  {
+   "n": 27,
+   "text": "I notice a child’s mistakes more readily than their efforts.",
+   "s": "Judge",
+   "sub": "others"
+  },
+  {
+   "n": 28,
+   "text": "I find it hard to let a child struggle a little before I step in.",
+   "s": "Controller"
+  },
+  {
+   "n": 29,
+   "text": "I focus more on teaching facts and skills than on emotional connection.",
+   "s": "Hyper-Rational"
+  },
+  {
+   "n": 30,
+   "text": "When a child is defiant, I take it personally and feel hurt.",
+   "s": "Victim"
+  },
+  {
+   "n": 31,
+   "text": "I feel our family circumstances (money, time, housing) make good parenting nearly impossible.",
+   "s": "Judge",
+   "sub": "circ"
+  },
+  {
+   "n": 32,
+   "text": "I feel anxious if a child seems behind other children on milestones.",
+   "s": "Hyper-Achiever"
+  },
+  {
+   "n": 33,
+   "text": "I find it hard to turn down family members’ advice, even when I disagree with it.",
+   "s": "Pleaser"
+  },
+  {
+   "n": 34,
+   "text": "I distract a child from difficult feelings rather than helping them talk about them.",
+   "s": "Avoider"
+  },
+  {
+   "n": 35,
+   "text": "I find it hard to accept “good enough” in parenting.",
+   "s": "Stickler"
+  },
+  {
+   "n": 36,
+   "text": "I find slow, repetitive routines with children (feeding, bedtime, play) boring.",
+   "s": "Restless"
+  },
+  {
+   "n": 37,
+   "text": "I find it hard to relax when a child is in someone else’s care.",
+   "s": "Hyper-Vigilant"
+  },
+  {
+   "n": 38,
+   "text": "I compare my parenting unfavorably with how other parents do it.",
+   "s": "Judge",
+   "sub": "self"
+  },
+  {
+   "n": 39,
+   "text": "I expect children to obey quickly, without discussion.",
+   "s": "Controller"
+  },
+  {
+   "n": 40,
+   "text": "I find it hard to play or be silly with children.",
+   "s": "Hyper-Rational"
+  },
+  {
+   "n": 41,
+   "text": "I stay upset for a long time after a hard day with children.",
+   "s": "Victim"
+  },
+  {
+   "n": 42,
+   "text": "I criticize my co-parent’s or relatives’ way of handling children.",
+   "s": "Judge",
+   "sub": "others"
+  },
+  {
+   "n": 43,
+   "text": "I praise children mostly for results rather than for effort.",
+   "s": "Hyper-Achiever"
+  },
+  {
+   "n": 44,
+   "text": "I neglect my own rest and needs to keep everyone happy, and sometimes resent it.",
+   "s": "Pleaser"
+  },
+  {
+   "n": 45,
+   "text": "I focus on what is going wrong in family life more than on what is going well.",
+   "s": "Judge",
+   "sub": "circ"
+  }
+ ],
+ "partB": [
+  {
+   "n": 46,
+   "q": "Which best describes your parenting stage?",
+   "t": "Select one",
+   "o": [
+    "Prospective parent (planning)",
+    "Expecting a child",
+    "New parent (child under 1 year)",
+    "Parent of a child aged 1–5",
+    "Parent of a child aged 6–12",
+    "Parent of a child aged 13–18"
+   ],
+   "scale": null
+  },
+  {
+   "n": 47,
+   "q": "How many children are in your care?",
+   "t": "Select one",
+   "o": [
+    "None yet",
+    "1",
+    "2",
+    "3 or more"
+   ],
+   "scale": null
+  },
+  {
+   "n": 48,
+   "q": "Which parent-education format would you be most willing to join?",
+   "t": "Select one",
+   "o": [
+    "Voluntary online course",
+    "Program through prenatal care or a pediatric clinic",
+    "Community or faith-based group",
+    "School-based program",
+    "Program linked to an incentive (e.g., tax credit, childcare discount)",
+    "None of these"
+   ],
+   "scale": null
+  },
+  {
+   "n": 49,
+   "q": "In your view, PI-inspired parent education should be:",
+   "t": "Select one",
+   "o": [
+    "Voluntary only",
+    "Voluntary, but encouraged with incentives",
+    "Required in some situations (e.g., when families request support services)",
+    "Required for all new parents",
+    "Not sure"
+   ],
+   "scale": null
+  },
+  {
+   "n": 50,
+   "q": "What concerns you most about such programs?",
+   "t": "Select all that apply",
+   "o": [
+    "Privacy of my answers",
+    "Government intrusion or loss of parental autonomy",
+    "Time or cost",
+    "Fit with my culture or values",
+    "Stigma or being labeled a “bad” parent",
+    "No major concerns"
+   ],
+   "scale": null
+  },
+  {
+   "n": 51,
+   "q": "Which parenting skills would you most like support with?",
+   "t": "Select up to two",
+   "o": [
+    "Responding to a child’s mistakes",
+    "Encouragement and praise",
+    "Communication and listening",
+    "Giving undivided attention",
+    "Managing my own stress",
+    "Setting consistent limits"
+   ],
+   "scale": null
+  },
+  {
+   "n": 52,
+   "q": "Do you consent to your anonymous answers being used for research on parent-education programs?",
+   "t": "Select one",
+   "o": [
+    "Yes",
+    "No"
+   ],
+   "scale": null
+  }
+ ]
+}
+};
 const ORDER = ["children","work","couple","wellbeing","parent"];
 const SABS = ["Judge","Avoider","Controller","Hyper-Achiever","Hyper-Rational","Hyper-Vigilant","Pleaser","Restless","Stickler","Victim"];
 const ACC = SABS.slice(1);
@@ -309,18 +1985,23 @@ function home(){
   <h1>Notice the voices that hold you back</h1>
   <p class="lede">Five short assessments built on the Positive Intelligence idea of Saboteurs: the habitual thought patterns that get in the way of curiosity, empathy, and calm. Each has 52 questions and gives you a scored profile with practical next steps.</p>
   <ul class="tests">${rows}</ul>
-  <footer>Your answers stay in this browser and are never sent anywhere. The statements are original items written for a course assignment, inspired by Positive Intelligence (Chamine, 2012). This is not the official assessment and not a diagnostic or clinical tool.</footer></div>`;
+  <footer>${STORING?"Your answers stay in this browser unless you choose to save them anonymously for research on the first screen of a test.":"Your answers stay in this browser and are never sent anywhere."} The statements are original items written for a course assignment, inspired by Positive Intelligence (Chamine, 2012). This is not the official assessment and not a diagnostic or clinical tool.</footer></div>`;
 }
 
+function storageRow(key,s){
+  if(!STORING) return "Your answers stay in this browser only. Nothing is sent anywhere.";
+  if(key==="parent") return "Your answers stay in this browser unless you agree to anonymous research use in question 52 at the end.";
+  return `<label style="display:flex;gap:10px;align-items:flex-start;cursor:pointer"><input type="checkbox" id="consent" ${s.consent?"checked":""} style="width:20px;height:20px;margin-top:3px;flex:none"><span>Save my anonymous answers for research. No name, email, or IP address is collected, and you'll see your results either way. This is optional.</span></label>`;
+}
 function intro(key){
   const t=TESTS[key], s=store[key]||{};
   const started = s.a && (Object.keys(s.a).length||Object.keys(s.b).length);
   const privacy = {
     children:"Results describe patterns you've observed, not diagnoses. Saboteur names are meant for adults; with a child, use friendly words such as 'your worry voice.'",
-    work:"You'll be asked for consent before scoring. Your results belong to you and stay in this browser. They must never be used for hiring, ranking, or performance reviews.",
+    work:"You'll be asked for consent before scoring. Your results belong to you. They must never be used for hiring, ranking, or performance reviews.",
     couple:"Answer alone, without discussing with your partner. You choose whether to share a result code for a side-by-side comparison. The tool never rates compatibility.",
     wellbeing:"Part B asks about the past two weeks. Retake the test after 6–8 weeks of practice to see what has changed.",
-    parent:"Your answers stay in this browser. Results are a starting point for learning, never a judgment of whether someone is a good parent."
+    parent:"Results are a starting point for learning, never a judgment of whether someone is a good parent."
   }[key];
   return `<div class="reveal">
   <button class="link noprint" data-act="home">All assessments</button>
@@ -330,6 +2011,7 @@ function intro(key){
    <dt>How to answer</dt><dd>${esc(t.instr)}</dd>
    <dt>Length</dt><dd>45 agreement statements, then 7 short questions. ${TIME[key]}.</dd>
    <dt>Privacy</dt><dd>${esc(privacy)}</dd>
+   <dt>Saving</dt><dd>${storageRow(key,s)}</dd>
   </dl>
   <div class="row">
    ${started?`<button class="btn" data-act="resume">Continue where you left off</button><button class="btn ghost" data-act="restart">Start over</button>`
@@ -454,11 +2136,59 @@ function results(key){
   const focus = r.primary.length? r.primary : r.ranked.slice(0,1);
   h+= ({children:resChildren,work:resWork,couple:resCouple,wellbeing:resWell,parent:resParent})[key](key,r,focus,{fi,quad,who,self});
 
+  h+=saveBlock(key);
   h+=`<h2 class="noprint">Next steps</h2>
   <p class="noprint">Practice for 6–8 weeks, then retake the test. A change of 10 points or more is a meaningful shift.</p>
   <div class="row noprint"><button class="btn" data-act="print">Print or save as PDF</button><button class="btn ghost" data-act="restart">Retake this test</button><button class="btn ghost" data-act="home">Try another assessment</button></div>
   <footer>Not a diagnostic or clinical tool. Original items inspired by Positive Intelligence (Chamine, 2012).</footer></div>`;
   return h;
+}
+
+/* ---------- saving to Google Sheets ---------- */
+function getAnonId(){
+  try{ let id=localStorage.getItem("pi-anon-id");
+    if(!id){ id=(crypto.randomUUID?crypto.randomUUID():String(Math.random()).slice(2)+Date.now()).replace(/-/g,"").slice(0,10); localStorage.setItem("pi-anon-id",id); }
+    return id; }catch(e){ return "no-storage"; }
+}
+function hasConsent(key){ const s=store[key]; return key==="parent" ? s.b[52]===0 : !!s.consent; }
+function maybeSave(key,force){
+  if(!STORING||!hasConsent(key)) return;
+  const s=store[key];
+  if(!force && (s.saveState==="sent"||s.saveState==="sending")) return;
+  const r=score(key); if(!r.valid) return;
+  const payload={anon_id:getAnonId(),test:key,consent_research:true,osl:r.osl,scores:r.scores,judge_sub:r.sub,
+                 answers:s.a,part_b:s.b,version:APP_VERSION};
+  s.saveState="sending"; save();
+  fetch(SAVE_URL,{method:"POST",mode:"no-cors",headers:{"Content-Type":"text/plain;charset=utf-8"},body:JSON.stringify(payload)})
+   .then(()=>{ s.saveState="sent"; save(); refreshSave(key); })
+   .catch(()=>{ s.saveState="failed"; save(); refreshSave(key); });
+}
+function refreshSave(key){ if(view.name==="results"&&view.key===key){ const el=$("#savebox"); if(el) el.innerHTML=saveInner(key); } }
+function saveInner(key){
+  const s=store[key];
+  let msg="";
+  if(STORING && hasConsent(key)){
+    if(s.saveState==="sent") msg=`<p>Your anonymous answers were saved for research. Your anonymous ID is <b>${esc(getAnonId())}</b>. Keep it if you want to compare a later retake.</p>`;
+    else if(s.saveState==="failed") msg=`<p class="err">Your answers could not be saved. Check your internet connection.</p><button class="btn ghost" data-act="retrysave">Try saving again</button>`;
+    else msg=`<p>Saving your anonymous answers…</p>`;
+  } else if(STORING && key!=="parent") msg=`<p class="small muted">You chose not to save your answers for research, so nothing was sent.</p>`;
+  return msg+`<button class="btn ghost" data-act="dl">Download my results (CSV)</button>`;
+}
+function saveBlock(key){ return `<div id="savebox" class="noprint" style="margin-top:28px">${saveInner(key)}</div>`; }
+function downloadCSV(key){
+  const t=TESTS[key], s=store[key], r=score(key);
+  const q=v=>'"'+String(v).replace(/"/g,'""')+'"';
+  const rows=[["Assessment",t.title],["Date",new Date().toISOString().slice(0,10)],[],["Saboteur","Score (0-100)","Band"]];
+  SABS.forEach(x=>rows.push([x,r.scores[x]??"",band(r.scores[x])||""]));
+  rows.push(["Overall Saboteur Load",r.osl,band(r.osl)],[],["#","Statement","Answer (1-5)"]);
+  t.items.forEach(it=>rows.push([it.n,it.text,s.a[it.n]??""]));
+  rows.push([],["#","Question","Answer"]);
+  t.partB.forEach(p=>{ const v=s.b[p.n]; let a="";
+    if(v==null) a=""; else if(p.t==="Scale") a=v; else if(Array.isArray(v)) a=v.map(i=>p.o[i]).join("; "); else a=p.o[v];
+    rows.push([p.n,p.q,a]); });
+  const blob=new Blob(["\ufeff"+rows.map(r=>r.map(q).join(",")).join("\r\n")],{type:"text/csv;charset=utf-8"});
+  const a=document.createElement("a"); a.href=URL.createObjectURL(blob); a.download=`saboteur-${key}-results.csv`;
+  document.body.appendChild(a); a.click(); a.remove(); setTimeout(()=>URL.revokeObjectURL(a.href),1000);
 }
 
 function bandAdvice(b,key){
@@ -536,7 +2266,7 @@ function resParent(key,r,focus){
     skills.forEach(k=>{const rel=(SKILLMAP[k]||[]).filter(s=>r.scores[s]>=25);
       h+=`<p><b>${esc(k)}:</b> ${rel.length?`linked to your ${rel.join(" and ")} pattern${rel.length>1?"s":""}. ${esc(PARENT[rel[0]][2])}`:"none of the related patterns are strong for you. Keep building on what you already do."}</p>`});
   }
-  h+=`<p class="small muted">${bText(key,52)===0?"You agreed to anonymous research use. In this demo, nothing leaves your browser.":"You declined research use. Your answers stay private."} Scores must never be used for child-protection, custody, or benefit decisions.</p>`;
+  h+=`<p class="small muted">${bText(key,52)===0?(STORING?"You agreed to anonymous research use.":"You agreed to anonymous research use, but saving is not switched on in this version, so nothing was sent."):"You declined research use. Your answers stay private."} Scores must never be used for child-protection, custody, or benefit decisions.</p>`;
   return h;
 }
 
@@ -602,7 +2332,7 @@ document.addEventListener("click",e=>{
   if(act==="start"){ ensure(key); save(); return go({name:"q",key}); }
   if(act==="resume"){ ensure(key); return go({name:"q",key}); }
   if(act==="resume0"){ const s=store[key]; s.done=false; const miss=TESTS[key].items.findIndex(q=>s.a[q.n]==null); s.idx=miss<0?0:miss; save(); return go({name:"q",key}); }
-  if(act==="restart"){ store[key]={a:{},b:{},idx:0,done:false}; save(); return go({name:"q",key}); }
+  if(act==="restart"){ store[key]={a:{},b:{},idx:0,done:false,consent:(store[key]||{}).consent}; save(); return go({name:"q",key}); }
   const s=store[key];
   if(act==="ans"){ const q=TESTS[key].items[s.idx]; s.a[q.n]=+b.dataset.v; s.idx++; save(); return go({name:"q",key}); }
   if(act==="skip"){ const q=TESTS[key].items[s.idx]; delete s.a[q.n]; s.idx++; save(); return go({name:"q",key}); }
@@ -617,14 +2347,18 @@ document.addEventListener("click",e=>{
   if(act==="next"){
     const q=TESTS[key].partB[s.idx-45];
     if(key==="work" && q.n===46 && s.b[46]===1){ delete store[key]; save(); return go({name:"stop"}); }
-    if(s.idx>=51){ s.done=true; save(); return go({name:"results",key}); }
+    if(s.idx>=51){ s.done=true; save(); go({name:"results",key}); maybeSave(key); return; }
     s.idx++; save(); return go({name:"q",key}); }
   if(act==="print") return window.print();
+  if(act==="dl") return downloadCSV(key);
+  if(act==="retrysave") return maybeSave(key,true);
   if(act==="copy"){ const t=$("#mycode").textContent; const done=()=>{b.textContent="Copied";setTimeout(()=>b.textContent="Copy my code",1500)};
     if(navigator.clipboard) navigator.clipboard.writeText(t).then(done,()=>{selectCode();}); else selectCode(); return; }
   if(act==="compare") return runCompare(key);
 });
 function selectCode(){ const r=document.createRange(); r.selectNodeContents($("#mycode")); const sel=getSelection(); sel.removeAllRanges(); sel.addRange(r); }
+
+document.addEventListener("change",e=>{ if(e.target.id==="consent"&&view.key){ ensure(view.key).consent=e.target.checked; save(); } });
 
 document.addEventListener("keydown",e=>{
   if(view.name!=="q") return; const s=store[view.key];
